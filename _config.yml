@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Irregular Blogging
+title: Blog | Travis Fantina
 email: contact@travisfantina.com
 description: >- # this means to ignore newlines until "baseurl:"
   Thoughts on coding, design, and business, updated sometimes.
@@ -22,8 +22,8 @@ url: "https://www.travisfantina.com" # the base hostname & protocol for your sit
 twitter_username: tfantina
 github_username: tfantina
 sass:
-  sass_dir: ./_scss
-  style: compressed
+  sass_dir: ./_sass
+  #style: compressed
 # Build settings
 markdown: kramdown
 theme: minima
