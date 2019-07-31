@@ -1,0 +1,142 @@
+.navStatus {
+  position: relative;
+  width: 100%;
+  background-color: var(--charleston-green, #272635);
+  height: 4em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) [12];
+  grid-template-columns: repeat(12, 1fr);
+  z-index: 100;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2/12;
+}
+
+navigation > ul li {
+  display: inline-block;
+  decoration: none;
+  margin-right: 25px;
+}
+
+navigation {
+  ul li {
+    a:link,
+    a:visited {
+      color: #ffffff;
+
+      text-decoration: none;
+      font-size: 20px;
+    }
+  }
+}
+
+navigation > ul li > a:hover {
+  color: var(--electric-blue, #8ffaed);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li#menu {
+  display: none;
+}
+
+@media screen and (max-width: 496px) {
+  header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--charleston-green, #272635);
+    height: 4em;
+    z-index: 100;
+    -ms-grid-columns: 50px auto 50px;
+    grid-template-columns: 50px auto 50px;
+  }
+
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+
+  navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+
+  .page-title > h1 {
+    font-size: 3em;
+  }
+
+  navigation > ul li:not(:first-child) {
+    display: none;
+  }
+
+  navigation.responsive > ul li:not(:first-child) {
+    display: block;
+    text-align: center;
+    animation-name: nav-opens;
+    -webkit-animation-name: nav-opens;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  li#menu {
+    display: block;
+  }
+  navigation > ul li > a:link,
+  a:visited {
+    display: block;
+  }
+
+  navigation > ul li > a:hover {
+    display: block;
+  }
+
+  .navStatus-open {
+    position: fixed;
+    width: 100%;
+    background-color: var(--quicksilver, #a6a6a8);
+    height: 4em;
+    min-height: 150px;
+  }
+}
