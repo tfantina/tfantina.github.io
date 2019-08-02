@@ -1,4 +1,6 @@
-# Blogging: now with Jekyll!
+---
+lead_image: assets/images/feldgrau-lemon.png
+---
 
 Here, today, I return to the world of blog writing. With this initial post let me give some why, what, and how. Or why I want to blog, what I hope you get out of this and lastly I’ll take a moment to talk about what I’m using to create and serve this blog.
 

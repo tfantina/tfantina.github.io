@@ -1,7 +1,28 @@
+@mixin post_title_style {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ============================================================================
+Wrapper
+============================================================================ */
+@media screen and (max-width: 496px) {
+  .wrapper {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .page-content {
+    padding-top: 0px;
+  }
+}
+
+/* ============================================================================
+Header and Navbar
+============================================================================ */
 .navStatus {
   position: relative;
   width: 100%;
-  background-color: var(--charleston-green, #272635);
+  background-color: $charleston-green;
   height: 4em;
   display: -ms-grid;
   display: grid;
@@ -57,7 +78,7 @@ navigation {
 }
 
 navigation > ul li > a:hover {
-  color: var(--electric-blue, #8ffaed);
+  color: $electric-blue;
   text-decoration: none;
   font-size: 20px;
 }
@@ -70,7 +91,7 @@ li#menu {
   header {
     position: fixed;
     width: 100%;
-    background-color: var(--charleston-green, #272635);
+    background-color: $charleston-green;
     height: 4em;
     z-index: 100;
     -ms-grid-columns: 50px auto 50px;
@@ -135,8 +156,144 @@ li#menu {
   .navStatus-open {
     position: fixed;
     width: 100%;
-    background-color: var(--quicksilver, #a6a6a8);
+    background-color: $quicksilver;
     height: 4em;
     min-height: 150px;
   }
+}
+
+/* ============================================================================
+Post display 
+============================================================================ */
+h3 {
+  a {
+    @include post_title_style();
+  }
+  a:visited {
+    @include post_title_style();
+  }
+  a:hover {
+    @include post_title_style();
+  }
+}
+
+/* ============================================================================
+Post masthead
+============================================================================ */
+
+@media screen and (max-width: 496px) {
+  .post > header {
+    position: relative;
+    width: 100%;
+    background-color: $charleston-green;
+    height: 100%;
+  }
+  .post .lead-img {
+    top: 0px;
+    position: absolute;
+    left: 0px;
+    max-height: 150px;
+    width: 100%;
+    object-fit: fit;
+    z-index: 0;
+  }
+  body .post {
+    display: grid;
+    grid-template-rows: 150px auto;
+    .post-title,
+    .post-date {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .post-content {
+      padding: 10px;
+    }
+  }
+}
+
+.post {
+  display: grid;
+  grid-template-rows: 300px auto;
+}
+.post-header {
+  grid-row: 1;
+  display: flex;
+  align-content: flex-end;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.lead-img {
+  top: 64px;
+  position: absolute;
+  left: 0px;
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.post-title {
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #000000;
+  position: absolute;
+  z-index: 5;
+  padding-bottom: 44px;
+}
+
+.post-date {
+  z-index: 5;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+.post-content {
+  grid-row: 2;
+}
+
+/* ============================================================================
+Feed images masthead
+============================================================================ */
+
+.home-lead {
+  height: 60px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: $charleston-green;
+  border-radius: 6px;
+  transition: transform 0.4s;
+}
+.home-lead:hover {
+  transform: scale(1.01, 1.01);
+}
+.home-lead-shadow {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: inset 0px 0px 25px 1px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 1s;
+  width: 100%;
+  height: 100%;
+}
+
+.home-lead-shadow:hover {
+  box-shadow: inset 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
+}
+
+.post-link {
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #000000;
+  position: absolute;
+  top: 0px;
+  left: 2px;
+}
+
+.home-post-meta {
+  position: absolute;
+  left: 2px;
+  bottom: 2px;
+  z-index: 5;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #000000;
 }

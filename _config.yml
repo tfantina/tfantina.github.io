@@ -23,6 +23,9 @@ twitter_username: tfantina
 github_username: tfantina
 sass:
   sass_dir: ./_sass
+
+show_excerpts:
+  true
   #style: compressed
 # Build settings
 markdown: kramdown
