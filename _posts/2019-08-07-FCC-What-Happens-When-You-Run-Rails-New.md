@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What Happens When You Run Rails New?"
-date: 2019-08-01 16:21:52 -0400
+date: 2019-08-07 16:21:52 -0400
 categories: rails, development, fcc, ruby
 lead_image: https://images.unsplash.com/photo-1428532183904-32d2d9ff1e4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ
 ---
