@@ -16,7 +16,7 @@ layout: default
     <li>
       <div class="home-lead">
         {%- if post.lead_image -%}
-        <img class="home-lead-img" src="/{{ post.lead_image }}" />
+        <img class="home-lead-img" src="{{ post.lead_image }}" />
 
         {%- endif -%} {%- assign date_format = site.minima.date_format |
         default: "%b %-d, %Y" -%}
