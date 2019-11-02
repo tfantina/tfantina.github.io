@@ -188,6 +188,16 @@ Post masthead
 ============================================================================ */
 
 @media screen and (max-width: 496px) {
+  .post-link {
+    line-height: 26px;
+  }
+  .home-post-meta {
+    display: none;
+  }
+
+  .highlighter-rouge .highlight {
+    max-width: 100vw;
+  }
   .post > header {
     position: relative;
     width: 100%;
