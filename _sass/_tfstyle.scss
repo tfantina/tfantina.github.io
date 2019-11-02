@@ -169,7 +169,7 @@ li#menu {
 }
 
 /* ============================================================================
-Post display 
+Post display
 ============================================================================ */
 h3 {
   a {
@@ -267,8 +267,8 @@ Feed images masthead
   overflow: hidden;
   position: relative;
   background-color: $charleston-green;
-  border-radius: 6px;
-  transition: transform 0.4s;
+  border-radius: 2px;
+  transition: transform 0.2s;
 }
 .home-lead:hover {
   transform: scale(1.01, 1.01);
