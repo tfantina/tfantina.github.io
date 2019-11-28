@@ -2,7 +2,7 @@
 layout: post
 title: "Read and Chill"
 date: 2019-11-02 11:52:52 -0400
-categories: development, life,
+categories: development life
 lead_image: https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1153&q=80
 ---
 

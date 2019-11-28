@@ -2,7 +2,7 @@
 layout: post
 title: "Tesla Cybertruck Design"
 date: 2019-11-23 14:12:52 -0400
-categories: design, tesla
+categories: design tesla
 lead_image: https://www.travisfantina.com/images/blog/cybertruck.png
 ---
 Initial reactions to the Cybertruck have been... mixed? Passionate? The truck is one of the most unique, brutalist, and futuristic designs of any truck to go into production and reactions to it are a good opportunity to examine a few design concepts, or rather the ways in which people react to design.

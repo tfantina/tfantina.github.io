@@ -2,7 +2,7 @@
 layout: post
 title: "Blogging: Now with Jekyll!"
 date: 2019-08-01 16:21:52 -0400
-categories: jekyll, blog, life
+categories: jekyll blog life
 lead_image: /assets/images/feldgrau-lemon.png
 ---
 
