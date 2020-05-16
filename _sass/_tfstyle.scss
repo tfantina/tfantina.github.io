@@ -272,11 +272,12 @@ Feed images masthead
 ============================================================================ */
 
 .home-lead {
-  height: 60px;
+  height: 125px;
   width: 100%;
   overflow: hidden;
   position: relative;
   background-color: $charleston-green;
+  margin-bottom: 1.4rem;
   border-radius: 2px;
   transition: transform 0.2s;
 }
@@ -298,15 +299,18 @@ Feed images masthead
 }
 
 .post-link {
+  position: absolute;
+  padding: 8px;
   color: #ffffff;
   text-shadow: 2px 2px 5px #000000;
-  position: absolute;
-  top: 0px;
+  top: 45px;
   left: 2px;
+  font-weight: bold;
 }
 
 .home-post-meta {
   position: absolute;
+  padding: 8px;
   left: 2px;
   bottom: 2px;
   z-index: 5;

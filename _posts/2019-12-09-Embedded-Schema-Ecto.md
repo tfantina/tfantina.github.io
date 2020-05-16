@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Today I Learned: Ecto Embedded Schemas"
-date: 2019-11-28 05:10:52 -0400
+date: 2019-12-09 05:10:52 -0400
 categories: til ecto elixir development
 lead_image: https://images.unsplash.com/photo-1583606638538-e04ea94bebf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1113&q=80
 ---
