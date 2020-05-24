@@ -4,6 +4,7 @@ title: "Today I Learned: Behaviours in Elixir"
 date: 2020-01-30 05:10:52 -0400
 categories: til elixir development
 lead_image: https://www.travisfantina.com/images/blog/ducklings.jpeg
+placement: botttom
 ---
 
 Elixir is Dynamically typed, but you can add a bit of typing with typespecs in functions

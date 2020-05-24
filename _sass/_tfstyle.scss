@@ -249,6 +249,18 @@ Post masthead
   z-index: 0;
 }
 
+.lead-img.bottom {
+  object-position: 50% 80%;
+}
+
+.lead-img.mid {
+  object-position: 50% 50%;
+}
+
+.lead-img.mid-top {
+  object-position: 50% 20%;
+}
+
 .post-title {
   color: #ffffff;
   text-shadow: 2px 2px 5px #000000;
@@ -298,7 +310,7 @@ Feed images masthead
   box-shadow: inset 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
 }
 
-.post-link {
+.home-lead .post-link {
   position: absolute;
   padding: 8px;
   color: #ffffff;

@@ -20,3 +20,7 @@ I hope if somebody happen to stumble across one via a Duck Duck Go search it
 will shed a bit of light on their problem. At the very least it will be
 a place for me to come back to when I, inevitably, encounter the same issue
 again.
+
+---
+
+Photo: [Travis Fantina](https://www.travisfantina.com)

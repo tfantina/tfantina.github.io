@@ -4,6 +4,7 @@ title: "Today I Learned: A Dangerous Elixir Gotcha"
 date: 2020-03-10 05:10:52 -0400
 categories: til elixir development
 lead_image: https://www.travisfantina.com/images/blog/ice-cream.jpg
+placement: bottom
 ---
 
 Elixir has a datatype called a Charlist. An important thing to remember about
