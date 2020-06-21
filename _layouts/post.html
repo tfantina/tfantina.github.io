@@ -8,7 +8,7 @@ layout: default
   itemtype="http://schema.org/BlogPosting"
 >
   <header class="post-header">
-    <img class="lead-img {{page.placement}}" src="{{ page.lead_image }}">
+    <img class="lead-img {{page.placement}}" src="{{ page.lead_image }}" />
     <h1 class="post-title p-name" itemprop="name headline">
       {{ page.title | escape }}
     </h1>
@@ -19,14 +19,13 @@ layout: default
         itemprop="datePublished"
       >
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
-        -%}
-        {{ page.date | date: date_format }}
+        -%} {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%} •
       <span itemprop="author" itemscope itemtype="http://schema.org/Person"
-        ><span class="p-author h-card" itemprop="name">{{
-          page.author | escape
-        }}</span></span
+        ><span class="p-author h-card" itemprop="name"
+          >{{ page.author | escape }}</span
+        ></span
       >
       {%- endif -%}
     </p>
@@ -35,9 +34,20 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
-    <a rel="author" href="{{ "/" | relative_url }}">Back to home </a>
-  {%- if site.disqus.shortname -%} {%- include disqus_comments.html -%} {%-
-  endif -%}
+  <div class="subscription-box">
+    Like what you see?
+    <a href="{{ 'feed.xml' | relative_url }}">
+      <span>Subscribe</span>
+      <svg class="svg-icon">
+        <use
+          xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"
+        ></use>
+      </svg>
+    </a>
+  </div>
+  <p>
+    <a rel="author" href="{{ '/' | relative_url }}">Back to home </a>
+  </p>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
