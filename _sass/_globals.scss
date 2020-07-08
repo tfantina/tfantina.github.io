@@ -1,0 +1,139 @@
+$background: #fff;
+$text-dark: #283618;
+$text-light: #606c38;
+$accent-light: #dda15e;
+$accent-dark: #bb6b25;
+$accent-primary: #ecf9ff;
+$accent-secondary: #e8ffee;
+$accent-tertiary: #ffdef3;
+$primary-dark: #6596a6;
+$secondary-dark: #5d936b;
+$tertiary: #943578;
+$brand: #ff6b6b;
+$brand-dark: #903737;
+$font-size-default: 15px;
+
+h2 {
+  font-family: "Joost", "Futura", "Helvetica", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: calc($font-size-default * 1.5);
+  color: $brand-dark;
+}
+
+.btn {
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+a:link,
+a:visited {
+  font-weight: 600;
+  font-size: 16px;
+  color: $brand-dark;
+}
+
+a:hover {
+  animation-name: links;
+  animation-duration: 1s;
+  text-decoration: none;
+  animation-iteration-count: infinite;
+}
+
+@keyframes links {
+  0% {
+    color: $brand-dark;
+  }
+  10% {
+    color: $tertiary;
+  }
+  35% {
+    color: $secondary-dark;
+  }
+  60% {
+    color: $primary-dark;
+  }
+  85% {
+    color: $brand-dark;
+  }
+}
+
+.btn-secondary {
+  color: $background;
+  background-color: $tertiary;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(148, 53, 120),
+    rgb(39, 107, 140)
+  );
+  transition: box-shadow background-image 0.5s;
+}
+.btn-secondary:hover {
+  box-shadow: 0px 5px 10px rgba(123, 181, 162, 0.5);
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(148, 53, 120),
+    rgb(39, 107, 140),
+    rgb(39, 107, 140)
+  );
+}
+
+a.text_link {
+  color: $text-dark;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 786px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h2 {
+    font-size: 2.6rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================================================
+Wrapper
+============================================================================ */
+body .home {
+  padding: 0px;
+}
+.wrapper {
+  padding: 0px;
+  margin: 0px;
+}
+@media screen and (min-width: 496px) {
+  body .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body .home {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .page-content {
+    padding-top: 0px;
+  }
+}

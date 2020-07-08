@@ -8,7 +8,7 @@
       <h2 class="footer-heading">{{ site.title | escape }}</h2>
         <ul class="contact-list">
           <li class="p-name">
-             
+
             {%- if site.author -%}
               {{ site.author | escape }}
             {%- endif -%}
@@ -23,15 +23,25 @@
         {%- include social.html -%}
       </div>
       </div>
-   
+
 
       <div class="footer-col footer-col-3">
         <p>{{- site.description | escape -}}</p>
       </div>
 
-     
+
     </div>
 
   </div>
 
 </footer>
+
+<script src="{{
+  base.url | prepend: site.url
+}}/assets/scripts/navigation.js"></script>
+<script src="{{
+  base.url | prepend: site.url
+}}/assets/scripts/dropdown.js"></script>
+<script src="{{
+  base.url | prepend: site.url
+}}/assets/scripts/elongate.js"></script>

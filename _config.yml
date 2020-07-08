@@ -13,12 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Blog | Travis Fantina
-email: contact@travisfantina.com
+title: Travis Fantina
+email: trav@hey.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Thoughts on coding, design, and business, updated sometimes.
+  I design and build beautiful and functional web treats.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "tfantina@github.io" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /:year/:month/:day/:title:output_ext
 twitter_username: tfantina
 github_username: tfantina
 sass:
@@ -33,6 +34,8 @@ theme: minima
 plugins:
   - jekyll-feed
 
+assets:
+  cache: false
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

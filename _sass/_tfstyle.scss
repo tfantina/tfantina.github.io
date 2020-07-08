@@ -4,24 +4,6 @@
 }
 
 /* ============================================================================
-Wrapper
-============================================================================ */
-@media screen and (max-width: 496px) {
-  body .wrapper {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-
-  body .home {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .page-content {
-    padding-top: 0px;
-  }
-}
-
-/* ============================================================================
 Header and Navbar
 ============================================================================ */
 .navStatus {
@@ -213,18 +195,6 @@ Post masthead
     object-fit: fit;
     z-index: 0;
   }
-  body .post {
-    display: grid;
-    grid-template-rows: 150px auto;
-    .post-title,
-    .post-date {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-    .post-content {
-      padding: 10px;
-    }
-  }
 }
 
 .post {
@@ -275,10 +245,6 @@ Post masthead
   text-shadow: 2px 2px 5px #000000;
 }
 
-.post-content {
-  grid-row: 2;
-}
-
 .subscription-box {
   display: flex;
   flex-direction: row;
@@ -288,55 +254,4 @@ Post masthead
   a:link {
     padding-left: 40px;
   }
-}
-
-/* ============================================================================
-Feed images masthead
-============================================================================ */
-
-.home-lead {
-  height: 125px;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  background-color: $charleston-green;
-  margin-bottom: 1.4rem;
-  border-radius: 2px;
-  transition: transform 0.2s;
-}
-.home-lead:hover {
-  transform: scale(1.01, 1.01);
-}
-.home-lead-shadow {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  box-shadow: inset 0px 0px 25px 1px rgba(0, 0, 0, 0.5);
-  transition: box-shadow 1s;
-  width: 100%;
-  height: 100%;
-}
-
-.home-lead-shadow:hover {
-  box-shadow: inset 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
-}
-
-.home-lead .post-link {
-  position: absolute;
-  padding: 8px;
-  color: #ffffff;
-  text-shadow: 2px 2px 5px #000000;
-  top: 45px;
-  left: 2px;
-  font-weight: bold;
-}
-
-.home-post-meta {
-  position: absolute;
-  padding: 8px;
-  left: 2px;
-  bottom: 2px;
-  z-index: 5;
-  color: #ffffff;
-  text-shadow: 2px 2px 5px #000000;
 }

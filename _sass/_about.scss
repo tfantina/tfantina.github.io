@@ -1,0 +1,76 @@
+.about.reveal {
+  height: 100vh;
+  opacity: 1;
+  display: block;
+}
+
+.reveal {
+  opacity: 0;
+  height: 0px;
+  display: none;
+  transition: height 0.5s;
+}
+
+.reveal.open {
+  display: block;
+  opacity: 1;
+  height: 40px;
+}
+
+.about.reveal.open {
+  height: calc(100vh + 20px);
+}
+
+.elongate {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 200px 1fr;
+}
+
+span .l-col {
+  grid-column: 1;
+}
+
+.experience-bar {
+  grid-column: 2;
+  height: 15px;
+  width: 100%;
+  background: $accent-light;
+  border-radius: 10px;
+  z-index: 10;
+
+  .inner-bar {
+    background-color: $text-light;
+    height: 15px;
+    border-radius: 10px;
+    z-index: 20;
+  }
+}
+
+#elixir {
+  width: 80%;
+}
+#ruby {
+  width: 75%;
+}
+#javascript {
+  width: 75%;
+}
+#wp {
+  width: 50%;
+}
+#react {
+  width: 30%;
+}
+#redux {
+  width: 30%;
+}
+#do {
+  width: 30%;
+}
+#django {
+  width: 15%;
+}
+#express {
+  width: 10%;
+}

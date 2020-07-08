@@ -1,0 +1,57 @@
+.brand {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  color: $brand;
+
+  h1 {
+    font-family: "Jost", sans-serif;
+    font-weight: 800;
+    font-size: calc(#{$font-size-default} * 2);
+  }
+}
+
+svg.logo {
+  width: 30px;
+  height: 60px;
+}
+
+.push {
+  height: 100vh;
+}
+
+@media only screen and (min-width: 600px) {
+  .brand {
+    h1 {
+      font-size: calc(#{$font-size-default} * 3);
+    }
+  }
+  svg.logo {
+    width: 60px;
+    height: 82px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .brand {
+    h1 {
+      font-size: calc(#{$font-size-default} * 3.5);
+    }
+  }
+  svg.logo {
+    width: 80px;
+    height: 109px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .brand {
+    h1 {
+      font-size: calc(#{$font-size-default} * 4);
+    }
+  }
+  svg.logo {
+    width: 100px;
+    height: 137px;
+  }
+}
