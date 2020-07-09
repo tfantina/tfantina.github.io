@@ -49,15 +49,11 @@
   }
 
   .primary {
-    background-color: $accent-primary;
-    background-image: linear-gradient($accent-primary, #c4e2fb);
+    background-color: $primary-light;
+    background-image: linear-gradient($primary-light, $accent-secondary);
   }
   .secondary {
     background-color: $accent-secondary;
-    background-image: linear-gradient($accent-secondary, #cef4e0);
-  }
-  .tertiary {
-    background-color: $accent-tertiary;
-    background-image: linear-gradient($accent-tertiary, #f6cce7);
+    background-image: linear-gradient($accent-secondary, $primary-light);
   }
 }

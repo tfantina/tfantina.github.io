@@ -20,7 +20,8 @@ Blog posts on home page
   a:link,
   a:visited,
   a:hover {
-    color: #fff;
+    font-size: 20px;
+    color: $accent-secondary;
     animation-name: none;
   }
 }
@@ -41,7 +42,7 @@ Blog posts on designated blog page
 }
 
 .post_outline:nth-child(odd) {
-  background-color: $accent-tertiary;
+  background-color: $accent-primary;
 }
 .post_outline:nth-child(even) {
   background-color: $accent-primary;
@@ -160,12 +161,13 @@ Post content
 
 .post-link {
   position: absolute;
-  color: #ffffff;
+  color: $accent-secondary;
   text-shadow: 2px 2px 5px #000000;
   top: 45px;
   left: 2px;
   font-weight: bold;
-  background-color: rgba(#943578, 0.53);
+  font-size: 20px;
+  background-color: rgba(#35c76f, 0.53);
   width: calc(100% - 10px);
   padding: 8px;
 }

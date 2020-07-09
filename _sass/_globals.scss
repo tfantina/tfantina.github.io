@@ -1,16 +1,16 @@
 $background: #fff;
-$text-dark: #283618;
+$text-dark: #112224;
 $text-light: #606c38;
 $accent-light: #dda15e;
 $accent-dark: #bb6b25;
-$accent-primary: #ecf9ff;
+$accent-primary: #85d6a5;
+$primary-light: #b7f0ce;
+$primary-dark: #35c76f;
 $accent-secondary: #e8ffee;
-$accent-tertiary: #ffdef3;
-$primary-dark: #6596a6;
 $secondary-dark: #5d936b;
 $tertiary: #943578;
-$brand: #ff6b6b;
-$brand-dark: #903737;
+$brand: #5accae;
+$brand-dark: #2d6b55;
 $font-size-default: 15px;
 
 h2 {
@@ -65,18 +65,17 @@ a:hover {
   background-color: $tertiary;
   background-image: linear-gradient(
     to bottom right,
-    rgb(148, 53, 120),
-    rgb(39, 107, 140)
+    $primary-dark,
+    $secondary-dark
   );
-  transition: box-shadow background-image 0.5s;
+  transition: box-shadow 0.5s;
 }
 .btn-secondary:hover {
   box-shadow: 0px 5px 10px rgba(123, 181, 162, 0.5);
   background-image: linear-gradient(
     to bottom right,
-    rgb(148, 53, 120),
-    rgb(39, 107, 140),
-    rgb(39, 107, 140)
+    $secondary-dark,
+    $brand-dark
   );
 }
 
@@ -111,6 +110,15 @@ a.text_link {
 
 html {
   scroll-behavior: smooth;
+}
+
+.svg-icon {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  fill: $brand-dark;
+  padding-left: 5px;
+  vertical-align: bottom;
 }
 
 /* ============================================================================
